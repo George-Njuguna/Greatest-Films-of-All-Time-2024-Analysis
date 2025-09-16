@@ -1,22 +1,85 @@
-# Greatest-Films-of-All-Time-2024-Analysis
-**Project Overview:**
-The objective of this project is to identify the greatest movies of all time by systematically analyzing and comparing curated lists from two leading review platforms: **IMDb** and **Rotten Tomatoes**. By evaluating movies across these platforms, I aim to identify films that consistently achieve high rankings based on their presence in multiple lists, average ratings, and the total number of ratings. This approach provides a comprehensive and data-driven perspective to highlight films that have achieved universal acclaim.
+# 🎬 Greatest Films of All Time (2024) – Data Analysis
 
-**Selection Criteria:**
+##  Project Overview
 
-1. **IMDb:** Top 250 movies  of all time.
-2. **Rotten Tomatoes:** Top 300 movies as chosen by critics and audiences.
+This project aims to identify the **greatest films of all time** by systematically analyzing and comparing curated lists from two leading review platforms: **IMDb** and **Rotten Tomatoes**. By evaluating movies across these platforms, the analysis highlights films that consistently achieve high rankings based on:
+
+* Cross-platform presence
+* Average ratings
+* Total number of ratings
+
+This approach provides a **comprehensive, data-driven perspective** to uncover films that have achieved **universal acclaim**.
+
+---
+
+##  Selection Criteria
+
+* **IMDb:** Top 250 movies of all time
+* **Rotten Tomatoes:** Top 300 movies as chosen by critics and audiences
+
+---
+
+##  Data Collected
+
+* **Title** – Name of the movie
+* **Rating** – Average rating on each platform
+* **Total Ratings** – Number of ratings on each platform
+* **Rating Classification** – Age rating (e.g., R, PG, PG-13)
+* **Runtime** – Length of the movie (in minutes)
+* **Director** – Primary director of the movie
+* **Genre** – Main genre(s), e.g., Comedy, Romance, Action, Drama
+
+---
+
+##  Methodology
+
+1. **Data Collection**
+
+   * Automated extraction using **Python + Selenium**
+   * Data sourced from IMDb and Rotten Tomatoes
+   * Exported to **JSON** for storage and consistency
+
+2. **Data Cleaning & Preparation**
+
+   * Standardized movie titles, genres, and rating classifications
+   * Ensured consistency across both platforms
+
+3. **Exploratory Data Analysis (EDA)**
+
+   * Identified rating distributions and cross-platform overlaps
+   * Analyzed total ratings and their correlation with rankings
+   * Explored genre and runtime trends
+
+4. **Visualization**
+
+   * Built **interactive Tableau dashboards** to showcase:
+
+     * Top consistently ranked films
+     * Rating comparisons across platforms
+     * Genre and runtime insights
+
+---
+
+##  Tools & Technologies
+
+* **Python (Selenium, Pandas, JSON handling)**
+* **Tableau Public** for dashboards
+* **Jupyter Notebook** for EDA
+
+---
+
+##  Expected Outcomes
+
+* A curated list of the **most universally acclaimed films**
+* Insights into rating patterns across platforms
+* Visualization of trends by **genre, runtime, and directors**
+* An interactive Tableau dashboard to explore results
+
+---
+
+## 📌 Dashboard (Coming Soon)
+
+Once finalized, the Tableau dashboard will be shared here for interactive exploration.
 
 
-**Data to Collect:**
 
-1. **Title** - Name of the movie.
-2. **Rating** - Average rating on each platform.
-3. **Total Ratings** - Number of total ratings on each platform.
-4. **Rating Classification** - Whether the title is rated R, PG, etc.
-5. **Runtime** - Length of the movie.
-6. **Director** - Primary director of the movie or TV show.
-7. **Genre** - Type of show, e.g., Comedy, Romance, Action, Drama, etc.
-
-
-I will write a Python script using Selenium to automate the process of extracting data from the three platforms. The data will be saved in a JSON file for further analysis. Once the data is ready, I’ll clean and prepare it to ensure everything is consistent and accurate across the platforms. Then, I’ll dive into some exploratory data analysis (EDA) to uncover interesting trends like average ratings, the number of ratings, and which genres are the most popular.Lastly, I will use **Tableau** Public to design interactive and visually engaging dashboards that effectively showcase insights and rankings of these iconic films.
